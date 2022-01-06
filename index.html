@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- Head -->
+	<head>
+
+		<!-- Meta -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kevin Baumgartner - Shopify 2022 Frontend Developer Intern Challenge</title>
+
+		<!-- Style imports -->
+		<link rel="stylesheet" type="text/css" href="style/reset.css">
+		<link rel="stylesheet" type="text/css" href="style/global.css">
+
+		<!-- JQuery import -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+		<!-- Google Font import -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+		<!-- Font Awesome import -->
+		<script src="https://kit.fontawesome.com/306158dd35.js" crossorigin="anonymous"></script>
+	</head>
+
+	<!-- Body -->
+	<body>
+		<div id="fade"></div>
+		<div id="header">
+			<div id="textArea">
+				<h1 id="title">Spacestagram</h1>
+				<h2 id="author">Kevin Baumgartner</h2>
+				<select name="rovers" id="roverSelect" class="headerField">
+					<option value="curiosity" selected>Curiosity</option>
+					<option value="opportunity">Opportunity</option>
+					<option value="spirit">Spirit</option>
+				</select>
+				<input type="text" name="sol" id="solSelect" class="headerField" value="" placeholder="Solar day(s)">
+				<input type="text" name="page" id="pageSelect" class="headerField" value="" placeholder="Page">
+				<button id="searchButton" onclick="getImages()"><i class="fas fa-search"></i></button>
+			</div>
+		</div>
+		<div id="tiles"></div>
+		<div id="modal">
+			<div id="modalBody">
+				<h1 id="modalHeader"></h1>
+				<img src="" id="modalImage">
+				<p id="modalDetails"></p>
+				<p id="modalExit" onclick="closeModal()"><i class="fas fa-times"></i></p>
+			</div>
+			<div id="modalBackground"></div>
+		</div>
+	</body>
+
+	<!-- Script imports -->
+	<script type="text/javascript" src="scripts/index.js"></script>
+</html>
